@@ -1,0 +1,13 @@
+.banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure no extra space is shown */
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
