@@ -46,7 +46,7 @@ function Products({cart,increaseQuantity,decreaseQuantity}){
             "Hello, welcome to the typing effect demo !",
             "Enjoy exploring the cool effect !",
             "This is an example of typing and deleting text.",
-        ]} typingSpeed={75} deletingSpeed={25}/>
+        ]} typingSpeed={5} deletingSpeed={2} duration={2}/>
         <Tile  header={"This is a class"} img={img} link={"https://www.scaler.com/"} linkText={"scaler"}/>
         <Banner />
         <ProgressBar percentage ={30}/>
