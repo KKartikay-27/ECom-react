@@ -1,8 +1,8 @@
 import './ProductCard.css';
+import React from 'react';
 import {useRef, useState} from 'react';
 import UseEffect from '../Effect/UseEffect';
-import React from 'react';
-import AddToCart from '../AddToCart/AddToCart';
+import ReduxAddToCart from '../ReduxAddTocart/ReduxAddToCart'
 
 
 function ProductCard({product,cart,increaseQuantity,decreaseQuantity,title,price}){
@@ -36,7 +36,7 @@ function ProductCard({product,cart,increaseQuantity,decreaseQuantity,title,price
             <p ref={pRef}>{price}</p>
             <input ref={iRef} onChange={displayOutput} type='text' />
             <p ref={oRef}>Over here the output would arrive - {inputV}</p>
-            <AddToCart product={product} cart = {cart} increaseQuantity={increaseQuantity} decreaseQuantity = {decreaseQuantity}/>
+            <ReduxAddToCart product={product} cart = {cart} increaseQuantity={increaseQuantity} decreaseQuantity = {decreaseQuantity}/>
             <UseEffect />
         </div>
     )
