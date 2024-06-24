@@ -7,7 +7,7 @@ import img from '../Tile/jim-carrey-jim-carrey-typing.gif';
 import Banner from "../Banner/Banner";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
-function Products({cart,increaseQuantity,decreaseQuantity}){
+function Products(){
     const products = [
         {
         id: 1,
@@ -46,13 +46,13 @@ function Products({cart,increaseQuantity,decreaseQuantity}){
             "Hello, welcome to the typing effect demo !",
             "Enjoy exploring the cool effect !",
             "This is an example of typing and deleting text.",
-        ]} typingSpeed={5} deletingSpeed={2} duration={2}/>
+        ]} typingSpeed={50} deletingSpeed={25} duration={20}/>
         <Tile  header={"This is a class"} img={img} link={"https://www.scaler.com/"} linkText={"scaler"}/>
         <Banner />
         <ProgressBar percentage ={30}/>
         <div>
             {products.map(function (item,index) {
-                return (<ProductCard title={item.title} price={item.price} key={index} product={item} cart={cart} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>);
+                return (<ProductCard title={item.title} price={item.price} key={index} product={item}/>);
             })}
         </div>
         </>

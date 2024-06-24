@@ -1,6 +1,6 @@
 import './App.css';
 import Products from './Components/Product/Product';
-import React, { useState,useContext } from 'react';
+import React, { useState } from 'react';
 import CartContext from './Components/Context/CartContext';
 
 function App() {
