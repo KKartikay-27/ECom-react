@@ -1,0 +1,14 @@
+.cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}

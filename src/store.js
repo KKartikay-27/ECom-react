@@ -32,25 +32,25 @@ function cartReducer(state ={items :{}}, action){
             
             case "REMOVE_FROM_CART": {
 
-                const product = action.payload;
-                if (state.items[product.id].quantity <= 1) {
-                  return {
-                    ...state,
-                    items: omit(state.items, [product.id])
-                  }
-                } else {
-                  return {
-                    ...state,
-                    items: {
-                      ...state.items,
-                      [product.id]: {
-                        ...state.items[product.id],
-                        quantity: state.items[product.id].quantity - 1
-                      }
+              const product = action.payload;
+              if (state.items[product.id].quantity <= 1) {
+                return {
+                  ...state,
+                  items: omit(state.items, [product.id])
+                }
+              } else {
+                return {
+                  ...state,
+                  items: {
+                    ...state.items,
+                    [product.id]: {
+                      ...state.items[product.id],
+                      quantity: state.items[product.id].quantity - 1
                     }
                   }
                 }
-        }
+              }
+            }
         default:
             return state;
     }
