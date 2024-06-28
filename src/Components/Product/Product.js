@@ -6,6 +6,7 @@ import Tile from "../Tile/Tile";
 import img from '../Tile/jim-carrey-jim-carrey-typing.gif';
 import Banner from "../Banner/Banner";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import Categories from '../Categories/Categories';
 
 function Products() {
     const products = [
@@ -28,6 +29,7 @@ function Products() {
             <Tile header={"This is a class"} img={img} link={"https://www.scaler.com/"} linkText={"scaler"} />
             <Banner />
             <ProgressBar percentage={30} />
+            <Categories/>
             <div>
                 {products.map((product, index) => (
                     <ProductCard key={index} product={product} />

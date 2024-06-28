@@ -1,5 +1,7 @@
 .product-card{
     border: 1px solid black;
+    margin: 2rem;
+    padding:1rem;   
 }
 .title{
     font-weight: bolder;

@@ -1,0 +1,5 @@
+function CategoryReducer(state = {
+    categories: []
+}){
+
+}
